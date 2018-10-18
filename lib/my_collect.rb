@@ -3,6 +3,7 @@ def my_collect(array)
   modified = []
   while i < array.length
     modified << yield(array[i])
+    i+=1
   end
   modified
 end 
